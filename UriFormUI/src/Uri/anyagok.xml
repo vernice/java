@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    <anyag>Natur</anyag>
+    <anyag>PE</anyag>
+    <anyag>Keverék</anyag>
+    <anyag>Blend</anyag>
+    <anyag>Reg</anyag>    
+</root>
