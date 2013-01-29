@@ -18,19 +18,20 @@ public class UriXMLReader {
 
     String file_nev;
     String elem_nev;
+    String path;
     ArrayList<String> eredmeny = new ArrayList<>();
 
     public ArrayList readXML(String file_nev, String elem_nev) throws Exception {
 
         this.file_nev = file_nev;
         this.elem_nev = elem_nev;
-
+        path = System.getProperty("user.dir");
 
         DocumentBuilderFactory factory =
                 DocumentBuilderFactory.newInstance();
         DocumentBuilder builder = factory.newDocumentBuilder();
 
-        Document doc = builder.parse(new File("/home/zsolti/NetBeansProjects/UriFormUI/src/Uri/" + this.file_nev));
+        Document doc = builder.parse(new File(path + "/src/Uri/" + this.file_nev));
 
         Element rootElement = doc.getDocumentElement();
 
